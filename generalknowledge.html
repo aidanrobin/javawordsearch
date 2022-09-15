@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ <html>
+     <!-- line6: meta charset specifies the character encoding for this document (line 3)-->
+     <!-- line8: imports the css stylesheet to the html file-->
+     <head>
+         <meta charset = "utf-8">
+         <title> WordFinder 2022</title>
+         <link rel = "stylesheet" type = "text/css" href = "styles.css">
+     </head>
+
+     <body>
+         <div id = "grid-container"></div>
+         <div id = "grid-words"></div>
+
+        
+         <!-- creates a button that gives the user the option to view game rules-->
+         <input type="button" id="rulesBTN" value = "View the rules again"/>
+
+         <!--Creates a button allowing the user to return to the previous page-->
+         <button onclick="history.back()">Quit Game (returns to previous screen)</button>
+         
+         <!-- imports the latest version of the jQuery framework-->
+         <script src = "https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+
+         <!-- calls/imports the wordfind.js and wordfindgame.js files-->
+         <script src = "wordfind.js"></script>
+         <script src = "wordfindgame.js"></script>
+
+         <script>
+             // Defines a list of words for user to find
+
+             var words = ['alpha', 'beta', 'gamma', 'delta', 'epsilon',
+                 'zeta', 'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu', 'nu',
+                 'xi', 'omicron', 'pi', 'rho', 'sigma', 'tau', 'upsilon', 'phi',
+                 'chi', 'psi', 'omega'
+            ];
+
+             // variable that tells user rules of game  
+             var rules = "RULES: \n \nWelcome To a word finder game. \n\nHere, we have a grid filled with words for you to find. \
+             \
+             All you are required to do is to click and drag on the word\
+             and release your key when done. \n\n\The game ends when all the words are found, but if you\
+             cannot find all the words, you can press the 'Give Up'\
+             button, which will then show you the correct answers. \n\nGood luck!! \n\n words may overlap..."
+
+             // calls the rules variable as an alert
+             alert(rules);
+
+             // creates a rules button, and on click, displays the game rules  
+             $("#rulesBTN").click(function(){
+                 alert(rules);
+             });
+
+             // creates the "Give up" button, and calls the solve function on a click in wordfindgame.js to print the answer to the wordsearch
+             $("#solveBTN").click(function(){
+                 var finalAnswer = wordfindgame.solve(gamegrid, words);
+
+                 // alert to tell user they have lost  
+                 alert("Unfortunately you have pressed this button. You have lost. Here are the correct answers.\nRefresh the page if you want to play again, otherwise thank you for playing!")
+             });
+
+             // calls the wordfindgame.js file and creates the game board
+             var gamegrid = wordfindgame.create(words, '#grid-container', '#grid-words');
+
+         </script>
+
+     </body>
+ </html>

@@ -1,0 +1,74 @@
+/* This file styles our game page */
+
+/* This is the red border around the grid */
+#grid-container {
+    border: 1px solid red;
+    padding: 20px;
+    float: left;
+    margin: 30px 20px;
+}
+
+#grid-container div {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* This styles each individual grid in the main grid */
+#grid-container .gridSquare{
+    height: 30px;
+    width: 30px;
+    text-transform: uppercase;
+    background-color: lightcyan;
+    border: 0;
+    font: 1em sans-serif;
+}
+
+
+/* This styles the color of each user-selected letter */
+#grid-container .selected{
+    background-color: red;
+}
+
+/* This styles each correctly selected word */
+#grid-container .found{
+    background-color: rosybrown;
+    color: white;
+}
+
+
+/* This styles each require word once the user gives up  */
+#grid-container .solved{
+    background-color: lightslategrey;
+    color: white;
+}
+
+/* This styles each word in the wordlist (position wise) */
+#grid-words{
+    padding-top: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    width: 300px;
+
+}
+
+/* This sets the wordlist with no style */
+#grid-words ul {
+    list-style-type: none;
+}
+
+/* This styles each word in the wordlist (font wise)*/
+#grid-words li {
+    padding: 3px 0;
+    font: 1em sans-serif;
+}
+
+/* This styles each correctly selected word in the wordlist */
+#grid-words .wordFound {
+    text-decoration: line-through;
+    color: red
+
+}
+
+#solve {
+    margin: 0 30px;
+}

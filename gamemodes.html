@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <!--This sets the width of the page to follow the width of the screen-->
+    <!--THe initial scale = 1 part sets the initial zoom level where the page is loaded first in the browser -->
+    <meta name="viewport" content = "width=device-width, initial-scale = 1">
+
+    <title>JavaScript Word Search Game 2022: Game Modes</title>
+
+    <!--Calls the stylesheet used to style the webpage -->
+    <link rel="stylesheet" href="website.css">
+
+    <!--Calls the carousel js file and defers it -> calls the file after the page is loaded-->
+    <script src="carousel.js" defer></script>
+</head>
+    
+<body>
+<div class = "hero">
+    <nav>
+        <!--Defines the home symbol and website logo-->
+        <img src = "/Users/aidanrobinson/Desktop/USYD/Y1S1/Info1111/SelfLearningAssignment1/SelfLearningAssignment1/SelfLearningAssignment1/Photos (screenshots of assignment)/images.png" class = "menu-img">
+        <img src = "/Users/aidanrobinson/Desktop/USYD/Y1S1/Info1111/SelfLearningAssignment1/SelfLearningAssignment1/SelfLearningAssignment1/Photos (screenshots of assignment)/Screen Shot 2022-05-22 at 12.53.35 pm.png" class = "logo">
+        <ul>
+            <!--Creates three link buttons, which link the user to its respective pages-->
+            <!--This is in an unordered list-->
+            <li><a href = "website.html">Home</a></li>
+            <li><a href = "contact.html">Contact Us</a></li>
+            <li><a href = "gamemodes.html">View Game Modes</a></li>
+        </ul>
+        
+    </nav>
+
+    <!--Creates a text class which tells the user instructions on how to select a gamemode-->
+    <div class="text-container">
+        <h1>Word Search 2022 <br><br><h3 style="color:red">Instructions for navigation</h3></h1>
+        <ul>
+            <li>Use the arrows on each picture to navigate on each game mode</li><br>
+            <li>Click on any of the buttons above the picture to play the Word Search</li>
+        </ul>
+    </div>
+</div>
+
+<!--Defines a section which allows the user to choose a game mode-->
+
+<section aria-label="Select GameMode">
+
+    <!--Defines a image carousel, one allowing users to scroll through a set of images and pick a gamemode-->
+    <div class="carousel" data-carousel>
+
+        <!--Creates two buttons, one for going to the previous picture and one for going to the next picture-->
+        <button class="carousel-button prev" data-carousel-button="prev">&#8656</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658</button>
+
+        <!--Creates an unordered list of slides for the slideshow -->
+        <ul data-slides>
+
+            <!--This is the active image (data-active)-->
+            <li class="slide" data-active>
+
+                <!--Creates a button in bisque colour linking the user to the technology word search-->
+                <a href = "technology.html"><h1 style="color:bisque;background:black">Technology (Click here to play)</h1></a>
+                
+                <!--Displays an image of technology-->
+                <img src="/Users/aidanrobinson/Desktop/USYD/Y1S1/Info1111/SelfLearningAssignment1/SelfLearningAssignment1/SelfLearningAssignment1/Photos (screenshots of assignment)/GettyImages-964033964-ca3290057ccc4024b57e755423572264.jpg" alt="Technology Search">
+            </li>
+            <li class="slide">
+                <!--Creates a button in bisque colour linking the user to the sport word search-->
+                <a href = "sports.html"><h1 style="color:bisque;background:black">Sports (Click here to play)</h1></a>
+
+                <!--Displays an image of sports-->
+                <img src="/Users/aidanrobinson/Desktop/USYD/Y1S1/Info1111/SelfLearningAssignment1/SelfLearningAssignment1/SelfLearningAssignment1/Photos (screenshots of assignment)/sports.jpg" alt="Sport Search">
+            </li>
+            <li class="slide">
+                <!--Creates a button in bisque colour linking the user to the general knowledge word search-->
+                <a href = "generalknowledge.html"><h1 style="color:bisque;background:black">General Knowledge (Click here to play)</h1></a>
+                
+                <!--Displays an image of general knowledge-->
+                <img src="/Users/aidanrobinson/Desktop/USYD/Y1S1/Info1111/SelfLearningAssignment1/SelfLearningAssignment1/SelfLearningAssignment1/Photos (screenshots of assignment)/v4-460px-Increase-Your-General-Knowledge-Step-1-Version-2.jpg" alt="General knowledge Search">
+           
+            </li>
+        </ul>
+    </div>
+</section>
+</body>
+</html>
+   

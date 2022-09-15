@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width, initial-scale = 1">
+    <title>JavaScript Word Search Game 2022: Contact Us</title>
+
+    <!--Calls the stylesheet that styles the contact page-->
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <!--Creates class that shows the top navigation bar on website -->
+    <div class = "hero">
+        <nav>
+            <!-- Calls images shown in navigation bar-->
+            <img src = "/Users/aidanrobinson/Desktop/USYD/Y1S1/Info1111/SelfLearningAssignment1/SelfLearningAssignment1/SelfLearningAssignment1/Photos (screenshots of assignment)/images.png" class = "menu-img">
+            <img src = "/Users/aidanrobinson/Desktop/USYD/Y1S1/Info1111/SelfLearningAssignment1/SelfLearningAssignment1/SelfLearningAssignment1/Photos (screenshots of assignment)/Screen Shot 2022-05-22 at 12.53.35 pm.png" class = "logo">
+            <ul>
+                <!--An unordered list of links that link the user to other sections of the website.-->
+                <li><a href = "website.html">Home</a></li>
+                <li><a href = "contact.html">Contact Us</a></li>
+                <li><a href = "gamemodes.html">View Game Modes</a></li>
+            </ul>
+            
+        </nav>
+
+        <!--Links the body section of the page to a new stylesheet-->
+        <link rel="stylesheet" href="contact.css">
+
+
+        <div class="container">
+            <span class="big-circle"></span>
+            <img src="img/shape.png" class="square" alt="" />
+            <div class="form">
+              <div class="contact-info">
+                <h3 class="title">Feedback Form</h3>
+                <p class="text">
+                  Fill out the form below, and we will respond to your contact in 1-2 business days. 
+                </p>
+      
+                <div class="info">
+                  <div class="information">
+                    <img src="img/email.png" class="icon" alt="" />
+                    <p>Email: aidanrobinson264@gmail.com</p>
+                  </div>
+                </div>
+      
+                </div>
+              </div>
+      
+              <!--Sets the contact form class, which defines the contact form itself-->
+              <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+      
+                <!--These are the text boxes that the user can input 
+                values into for their query-->
+
+                <form action="index.html" autocomplete="off">
+                  <h3 class="title">Contact us</h3>
+                  <div class="input-container">
+                    <input type="text" name="name" class="input" />
+
+                    <!--This is the automatically preset text seen in
+                    each text box (to show what the user has to input in the 
+                    box)-->
+                    <label for="">Full Name</label>
+                    <span>Full Name</span>
+                  </div>
+
+                  <!--This class allows the user to input an email-->
+                  <div class="input-container">
+                    <input type="email" name="email" class="input" />
+                    <label for="">Email</label>
+                    <span>Email</span>
+                  </div>
+
+                  <!--This class allows the user to input a phone no.-->
+                  <div class="input-container">
+                    <input type="tel" name="phone" class="input" />
+                    <label for="">Phone</label>
+                    <span>Phone</span>
+                  </div>
+
+                  <!--These are inputs for longer answers (more open ended 
+                    queries such as whether the game is good or if improvements
+                    are needed)-->
+                  <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label for="">What did you like about our website?</label>
+                    <span>Message</span>
+                  </div>
+                  <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label for="">What can we improve on our website?</label>
+                    <span>Message</span>
+                  </div>
+                  <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label for="">Any other messages?</label>
+                    <span>Message</span>
+                  </div>
+
+                  <!--A send button to submit the query-->
+                  <input type="submit" value="Send" class="btn" />
+                  
+                </form>
+              </div>
+            </div>
+        </div>
+      
+        
+    
+    </div>
+
+    <!--Calls the contact.js file for execution-->
+    <script src="contact.js"></script>
+</body>
+
+</html>
